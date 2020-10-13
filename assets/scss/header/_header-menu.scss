@@ -14,6 +14,10 @@
     display: grid;
     align-items: center;
 
+    padding-right: 0;
+    padding-bottom: $gap;
+    padding-left: 0;
+
     @extend %container;
     grid-template-columns: auto 1fr;
   }

@@ -1,8 +1,3 @@
-.section-posts {
-  padding-top: 32px;
-  // padding-bottom: 100px;
-}
-
 .posts {
   &__container {
     padding: 67px 20px 100px;
@@ -10,29 +5,20 @@
     letter-spacing: 0.055em;
 
     @extend %container;
-
     @include lg-md {
       padding: 53px 20px 80px;
     }
-
     @include md-sm {
       padding: 40px 20px 60px;
     }
-
     @include sm {
       padding: 40px 20px 60px;
     }
 
     h2 {
-      margin-top: 0;
-      margin-bottom: 56px;
-      font-size: 2.5rem;
-      letter-spacing: 0.1em;
-      color: #2d3651;
-      font-family: "Roboto Slab", serif;
-      line-height: 1.2em;
-
       @include sm {
+        margin-bottom: 36px;
+
         text-align: center;
       }
     }
@@ -53,21 +39,18 @@
     display: grid;
 
     grid-gap: $gap;
-    grid-template-areas: "p1 p1 p2 p3""p4 p5 p6 p6";
+    grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
-
     @include lg-md {
-      grid-template-areas: "p1 p1 p2""p3 p4 p4""p5 p5 p6";
+      grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
       grid-template-columns: repeat(3, 1fr);
     }
-
     @include md-sm {
-      grid-template-areas: "p1 p2""p3 p4""p5 p6";
+      grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include sm {
-      grid-template-areas: "p1""p2""p3""p4""p5""p6";
+      grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
       grid-template-columns: 1fr;
     }
   }
@@ -142,7 +125,6 @@
       @include md-sm {
         font-size: 0.984rem;
       }
-
       @include sm {
         font-size: 0.984rem;
       }
@@ -152,16 +134,11 @@
         font-family: $font-header;
 
         letter-spacing: 0.05em;
-        color: #637588;
-        font-size: 1.125rem;
-
-        letter-spacing: 0.05em;
         color: $color-gray;
 
         @include md-sm {
           line-height: 1.15;
         }
-
         @include sm {
           font-size: 1.125rem;
         }
@@ -173,12 +150,11 @@
         letter-spacing: 0.01em;
 
         font-size: 0.98rem;
-        line-height: 1.20;
+        line-height: 1.14;
 
         @include md-sm {
           line-height: 1.15;
         }
-
         @include sm {
           padding: 17px 0 0;
         }

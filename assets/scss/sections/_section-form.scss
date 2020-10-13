@@ -1,4 +1,4 @@
-.form {
+.contact-form {
   padding: 30px 0;
 
   letter-spacing: 0.055em;
@@ -10,16 +10,13 @@
     display: grid;
 
     @extend %container;
-    
     grid-gap: $gap;
     grid-template-areas: "f1 f2 f3";
     grid-template-columns: repeat(3, 1fr);
-
     @include md-sm {
       grid-template-areas: "f1 f1" "f2 f3";
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include sm {
       grid-template-areas: "f1" "f2" "f3";
       grid-template-columns: 1fr;
